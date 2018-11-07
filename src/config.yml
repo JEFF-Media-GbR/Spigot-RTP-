@@ -1,0 +1,87 @@
+#########################
+#####     RTP+      #####
+#########################
+
+#
+# Highly configurable RandomTP plugin for 1.13 and later
+#
+
+#
+# Please note that players will need the rtp.use permission
+# or have to be OP to be able to use the /rtp or /randomtp command.
+#
+
+#########################
+#### global settings ####
+#########################
+
+#
+# Configuration here will apply to all worlds that do not have specific settings.
+# Per-World settings will be added in a later version.
+#
+
+# You can define distance limits for the random teleport.
+min-x: -50000
+max-x: 50000
+min-z: -50000
+max-z: 50000
+
+# When set to true, the block on which the player spawns must be solid, e.g. no half slab
+spawn-block-must-be-solid: true
+
+# Before the player is teleported, we choose a teleport location. This
+# location is considered unsafe, if the spawn point contains one of
+# the defined unsafe blocks, e.g. lava or water.
+
+unsafe-blocks:
+- LAVA
+- WATER
+- 
+
+#########################
+#### disabled worlds ####
+#########################
+
+# You can disable RTP+ for certain worlds. Each world's name has to
+# be on a separate line, starting with a hyphen and followed by a space
+
+# Example:
+#
+# disabled-worlds:
+# - world_nether
+# - world_the_end
+
+disabled-worlds:
+- world_nether
+- world_the_end
+
+#########################
+##### localization ######
+#########################
+
+# Available color codes:
+# &0 Black        &6 Gold       &c Red
+# &1 Dark Blue    &7 Gray       &d Light Purple
+# &2 Dark Green   &8 Dark Gray  &e Yellow
+# &3 Dark Aqua    &9 Blue       &f White
+# &4 Dark Red     &a Green     
+# &5 Dark Purple  &b Aqua
+
+# Available formatting codes:
+# &k Obfuscated   &m Strikethrough
+# &l Bold         &o Italic
+# &n Underline    &r Reset
+
+##### English
+message-when-using-chest: "&7Hint: Type &6/chestsort&7 to enable automatic chest sorting."
+message-when-using-chest2: "&7Hint: Type &6/chestsort&7 to disable automatic chest sorting."
+message-sorting-disabled: "&7Automatic chest sorting has been &cdisabled&7."
+message-sorting-enabled: "&7Automatic chest sorting has been &aenabled&7."
+message-error-players-only: "&cError: This command can only be run by players."
+
+#########################
+#####     Done!     #####
+#########################
+
+# please do not change the following line manually!
+config-version: 1

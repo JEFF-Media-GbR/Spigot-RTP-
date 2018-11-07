@@ -1,0 +1,18 @@
+main: de.jeffclan.JeffRTPPlus.RTPPlusPlugin
+name: RTP+
+version: 1.0.0
+api-version: 1.13
+description: Teleports you to a random location
+author: mfnalex
+website: 
+prefix: RTP+
+database: false 
+commands:
+  rtp:
+    description: Toggle automatic chest sorting
+    usage: /<command>
+    aliases: [randomtp]
+    permission: rtp.use
+permissions:
+  rtp.use:
+    description: Allows usage of the /rtp command
